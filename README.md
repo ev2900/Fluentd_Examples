@@ -12,7 +12,7 @@
 
 ```sudo vim /etc/td-agent/td-agent.conf```
 
-Copy code from [td-agent.conf](https://github.com/ev2900/Fluentd_Examples/blob/main/td-agent.conf)
+Copy code from [td-agent.conf](https://github.com/ev2900/Fluentd_Examples/blob/main/td-agent.conf) into the td-agent.conf file you just opened in vim
 
 4. Start the Fluentd service
 
