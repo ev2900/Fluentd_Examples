@@ -18,8 +18,7 @@ Copy code from [td-agent.conf](https://github.com/ev2900/Fluentd_Examples/blob/m
 
 ```sudo systemctl start td-agent.service```
 
-Optional - ```sudo systemctl status td-agent.service``` provides the status of the Fluentd service
-
+Optional - ```sudo systemctl status td-agent.service``` provides the status of the Fluentd service <br />
 Optional - ```sudo systemctl stop td-agent.service``` stops the Fluentd service
 
 5. Ping the Apache Host to Generate Access Logs
