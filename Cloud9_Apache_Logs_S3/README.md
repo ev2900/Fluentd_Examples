@@ -2,9 +2,13 @@
 
 Follow the instructions below
 
-1. Run the CloudFormation template below. It will create the required resources for this example
+1. Run the CloudFormation stack below. It will create the required resources required for this example
 
 [![Launch CloudFormation Stack](https://sharkech-public.s3.amazonaws.com/misc-public/cloudformation-launch-stack.png)](https://console.aws.amazon.com/cloudformation/home#/stacks/new?stackName=fluentd-demo&templateURL=https://sharkech-public.s3.amazonaws.com/misc-public/fluentd_cloud9.yml)
+
+The resources created by the CloudFormation stack are documented in the architecture below
+
+<img width="500" alt="Fluentd_cloud9_Architecture" src="https://github.com/ev2900/CloudFormation_Examples/blob/main/Architecture%20Diagrams%20for%20README/Fluentd_Cloud9_yml.png">
 
 2. Open the Cloud9 environment and install Fluentd. Complete all of the subsequent steps in the Cloud9 terminal
 
