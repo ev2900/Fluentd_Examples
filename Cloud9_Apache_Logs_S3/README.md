@@ -28,7 +28,7 @@ Follow the instructions below
 7. Change the permissions on the */var/log/apache2/access.log* folder and the */var/log/td-agent/s3* folder to allow Fluentd access
 
 ```sudo chmod 777 /var/log/apache2/access.log``` <br>
-```sudo chmod 777 /var/log/td-agent/s3```
+```sudo mkdir /var/log/td-agent | sudo chmod 777 /var/log/td-agent```
 
 8. Start Fluentd
 
