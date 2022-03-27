@@ -1,30 +1,43 @@
-# Fluentd Examples
+# Apache Access Logs to S3 via. Fluentd on Cloud9 (Ubuntu Linux)
 
-1. Install Fluentd
+Follow the instructions below
+
+1. Run the CloudFormation template below. It will create the required resources for this example
+
+
+
+2. Open the Cloud9 environment and install Fluentd. Complete all of the subsequent steps in the Cloud9 terminal
 
 ```gem install fluentd --no-doc```
 
-2. Install the S3 plugin
+3. Install S3 plugin
 
 ```gem install fluent-plugin-s3```
 
-3. Run the the Fluentd setup
+4. Run Fluentd setup
 
 ```fluentd --setup ./fluent```
 
-4. Open the ```fluent.conf``` file under the fluent folder and replace the content of the folder with the [fluent.conf](https://github.com/ev2900/Fluentd_Examples/blob/main/fluent.conf) file. 
+5. Open *fluent.conf* file under the *fluent* folder that was created during install and setup. Replace the content of the file with the content of the [fluent.conf](https://github.com/ev2900/Fluentd_Examples/blob/main/Cloud9_Apache_Logs_S3/fluent.conf) file in the repository
 
-5. Change the premissions on the ```/var/log/apache2/access.log``` folder and the ```/var/log/td-agent/s3``` folder to allow Fluentd access
+6. In the [fluent.conf](https://github.com/ev2900/Fluentd_Examples/blob/main/Cloud9_Apache_Logs_S3/fluent.conf)
+- Replace *<your_aws_id>* next to *aws_key_id*
+- Replace *<your_aws_security_key>* next to *aws_sec_key*
+- Replace *<your_S3_bucket_name>* next to *s3_bucket* 
 
-sudo chmod 777 ```/var/log/apache2/access.log```
-sudo chmod 777 ```/var/log/td-agent/s3```
+7. Change the permissions on the */var/log/apache2/access.log* folder and the */var/log/td-agent/s3* folder to allow Fluentd access
 
-6. Start Fluentd
+```sudo chmod 777 /var/log/apache2/access.log``` <br>
+```sudo chmod 777 /var/log/td-agent/s3```
+
+8. Start Fluentd
 
 ```fluentd -c ./fluent/fluent.conf -vv &```
 
-Optinal to stop Fluentd run ```pkill -f fluentd```
+Optional. To stop Fluentd run ```pkill -f fluentd```
 
-7. Generate sample Apache access log data
+9. Generate sample Apache access log data
 
 ```ab -n 100 -c 10 http://localhost/```
+
+Fluentd is now send your logs to S3. Open your S4 bucket and you will see a directory *logs/*. This directory will have a copy of the Apache access logs from your Cloud9 environment
