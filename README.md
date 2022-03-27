@@ -2,21 +2,23 @@
 
 1. Install Fluentd
 
-```curl -fsSL https://toolbelt.treasuredata.com/sh/install-ubuntu-bionic-td-agent4.sh | sh```
+```gem install fluentd --no-doc```
 
 2. Install the S3 plugin
 
 ```gem install fluent-plugin-s3```
 
-3. Configure the Fluentd agent
+3. Run the the Fluentd setup
 
-```sudo vim /etc/td-agent/td-agent.conf```
+```fluentd --setup ./fluent```
 
-Copy code from [td-agent.conf](https://github.com/ev2900/Fluentd_Examples/blob/main/td-agent.conf) into the td-agent.conf file you just opened in vim
+4. Open the ```fluent.conf``` file under the fluent folder and replace the content of the folder with the [fluent.conf](https://github.com/ev2900/Fluentd_Examples/blob/main/fluent.conf) file. 
 
-4. Start the Fluentd service
+5. 
 
-```sudo systemctl start td-agent.service```
+---
+
+4. Open the ```fluent.conf``` file under the fluent folder that was created during the install and set up. Replace the content of the file 
 
 Optional - ```sudo systemctl status td-agent.service``` provides the status of the Fluentd service <br />
 Optional - ```sudo systemctl stop td-agent.service``` stops the Fluentd service
