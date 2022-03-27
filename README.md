@@ -14,15 +14,17 @@
 
 4. Open the ```fluent.conf``` file under the fluent folder and replace the content of the folder with the [fluent.conf](https://github.com/ev2900/Fluentd_Examples/blob/main/fluent.conf) file. 
 
-5. 
+5. Change the premissions on the ```/var/log/apache2/access.log``` folder and the ```/var/log/td-agent/s3``` folder to allow Fluentd access
 
----
+sudo chmod 777 ```/var/log/apache2/access.log```
+sudo chmod 777 ```/var/log/td-agent/s3```
 
-4. Open the ```fluent.conf``` file under the fluent folder that was created during the install and set up. Replace the content of the file 
+6. Start Fluentd
 
-Optional - ```sudo systemctl status td-agent.service``` provides the status of the Fluentd service <br />
-Optional - ```sudo systemctl stop td-agent.service``` stops the Fluentd service
+```fluentd -c ./fluent/fluent.conf -vv &```
 
-5. Ping the Apache Host to Generate Access Logs
+Optinal to stop Fluentd run ```pkill -f fluentd```
+
+7. Generate sample Apache access log data
 
 ```ab -n 100 -c 10 http://localhost/```
