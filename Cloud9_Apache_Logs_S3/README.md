@@ -1,4 +1,4 @@
-# Apache Access Logs to S3 via. Fluentd on Cloud9 (Ubuntu Linux)
+# Send Apache access logs from an Ubuntu Cloud9 enviorment to a S3 bucket
 
 Follow the instructions below
 
