@@ -29,6 +29,8 @@ The resources created by the CloudFormation stack are documented in the architec
 - Replace *<your_aws_security_key>* next to *aws_sec_key*
 - Replace *<your_S3_bucket_name>* next to *s3_bucket* 
 
+**Note** the CloudFormation stack creates an S3 bucket that you may use for this example. Look up the name of the bucket in the console. The CloudFormation stack also creates an IAM role *Fluentd_Service_Role* with the permissions Fluentd requires. You can use this role to generate an id + security key
+
 7. Change the permissions on the */var/log/apache2/access.log* folder and the */var/log/td-agent/s3* folder to allow Fluentd access
 
 ```sudo chmod 777 /var/log/apache2/access.log``` <br>
