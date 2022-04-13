@@ -4,3 +4,6 @@ Repository of Fluentd log collection, parsing examples. Click on the link below 
 - [Send Apache access logs from an Ubuntu Cloud9 to a S3 bucket](https://github.com/ev2900/Fluentd_Examples/tree/main/Cloud9_Apache_Logs_S3)
 
 <img width="500" alt="Fluentd_cloud9_Architecture" src="https://github.com/ev2900/CloudFormation_Examples/blob/main/Architecture%20Diagrams%20for%20README/Fluentd_Cloud9_yml.png">
+
+## Future Improvements Planned for this Repository
+* Fluentd sending log data directly to OpenSearch
