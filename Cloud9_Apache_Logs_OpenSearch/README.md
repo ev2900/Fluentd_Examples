@@ -4,7 +4,7 @@ Follow the instructions below
 
 1. Run the CloudFormation stack below. It will create the required resources required for this example
 
-TO DO CLOUD FORMATION STACK
+[![Launch CloudFormation Stack](https://sharkech-public.s3.amazonaws.com/misc-public/cloudformation-launch-stack.png)](https://console.aws.amazon.com/cloudformation/home#/stacks/new?stackName=fluentd-demo-opensearch&templateURL=https://sharkech-public.s3.amazonaws.com/misc-public/fluentd_cloud9_opensearch.yml)
   
 The resources created by the CloudFormation stack are documented in the architecture below
   
