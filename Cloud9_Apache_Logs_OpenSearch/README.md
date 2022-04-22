@@ -1,4 +1,4 @@
-# Send Apache access logs from an Ubuntu Cloud9 to Amazon OpenSearch Service
+# Send Apache access logs from an Ubuntu Cloud9 to OpenSearch Service
 
 Follow the instructions below
 
