@@ -31,10 +31,10 @@ The resources created by the CloudFormation stack are documented in the architec
 
 **Note** the CloudFormation stack creates an S3 bucket and IAM user that you may use for this example. The output section of the CloudFormation stack will provide you with the name of the S3 bucket and an access_id + security_key
 
-7. Change the permissions on the */var/log/apache2/access.log* folder and the */var/log/td-agent/s3* folder to allow Fluentd access
+7. Change the permissions on the */var/log/apache2/ * folder and the */var/log/td-agent/ * folder to allow Fluentd access
 
-```sudo chmod 777 /var/log/apache2/access.log``` <br>
-```sudo mkdir /var/log/td-agent | sudo chmod 777 /var/log/td-agent```
+If folder does not exist ```sudo mkdir /var/log/apache2/``` then run ```sudo chmod 777 /var/log/apache2/ ``` <br>
+If folder does not exists ```sudo mkdir /var/log/td-agent/``` then run ```sudo chmod 777 /var/log/td-agent/ ```
 
 8. Start Fluentd
 
