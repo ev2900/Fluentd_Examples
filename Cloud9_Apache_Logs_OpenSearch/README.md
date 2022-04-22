@@ -37,7 +37,10 @@ TO DO INSTRUCTIONS
 
 **Note** the CloudFormation stack creates an OpenSearch domain and IAM user that you may use for this example. The output section of the CloudFormation stack will provide you with the name of the ccess_id, security_key, AWS REGION and OPENSEARCH DOMAIN URL
 
-8. Change the permissions on the
+8. Change the permissions on the */var/log/apache2/ * folder and the */var/log/td-agent/ * folder to allow Fluentd access
+
+If folder does not exist ```sudo mkdir /var/log/apache2/``` then run ```sudo chmod 777 /var/log/apache2/ ``` <br>
+If folder does not exists ```sudo mkdir /var/log/td-agent/``` then run ```sudo chmod 777 /var/log/td-agent/ ```
   
 9. Start Fluentd
   
