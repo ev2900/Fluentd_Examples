@@ -35,11 +35,15 @@ TO DO INSTRUCTIONS
 * Replace <your_aws_id> next to aws_key_id
 * Replace <your_aws_security_key> next to aws_sec_key
 
-*Note* the CloudFormation stack creates an OpenSearch domain and IAM user that you may use for this example. The output section of the CloudFormation stack will provide you with the name of the ccess_id, security_key, AWS REGION and OPENSEARCH DOMAIN URL
+**Note** the CloudFormation stack creates an OpenSearch domain and IAM user that you may use for this example. The output section of the CloudFormation stack will provide you with the name of the ccess_id, security_key, AWS REGION and OPENSEARCH DOMAIN URL
 
 8. Change the permissions on the
   
 9. Start Fluentd
+  
+  ```fluentd -c ./fluent/fluent.conf -vv &```
+
+Optional. To stop Fluentd run ```pkill -f fluentd```
   
 10. Generate sample Apache access log data
   
