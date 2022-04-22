@@ -1,4 +1,4 @@
-# Send Apache access logs from an Ubuntu Cloud9 to a S3 bucket
+# Send Apache access logs from an Ubuntu Cloud9 to Amazon OpenSearch Service
 
 Follow the instructions below
 
