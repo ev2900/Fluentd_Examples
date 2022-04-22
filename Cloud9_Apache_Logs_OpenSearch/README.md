@@ -30,8 +30,8 @@ TO DO INSTRUCTIONS
 
 7. In the [fluent.conf](https://github.com/ev2900/Fluentd_Examples/blob/main/Cloud9_Apache_Logs_OpenSearch/fluent.conf)
 
-* Replace <opensearch-domain-endpoint> next to url with the domain endpoint of your OpenSearch domain
-* Replace <aws-region> next to region with the region of your OpenSearch domain ex. ```us-east-1``` 
+* Replace <opensearch_domain_endpoint> next to url with the domain endpoint of your OpenSearch domain
+* Replace <aws_region> next to region with the region of your OpenSearch domain ex. ```us-east-1``` 
 * Replace <your_aws_id> next to aws_key_id
 * Replace <your_aws_security_key> next to aws_sec_key
 
