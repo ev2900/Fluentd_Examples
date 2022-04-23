@@ -10,11 +10,16 @@ The resources created by the CloudFormation stack are documented in the architec
 
 <img width="650" alt="Fluentd_cloud9_Architecture" src="https://github.com/ev2900/CloudFormation_Examples/blob/main/Architecture%20Diagrams%20for%20README/fluentd_cloud9_opensearch_yml.png">
 
-2. Map IAM user to all_access OpenSearch role
+2. Open the Cloud9 environment and Map IAM user to all_access OpenSearch role by running the [map_IAM_user.py](https://github.com/ev2900/Fluentd_Examples/blob/main/Cloud9_Apache_Logs_OpenSearch/map_IAM_user.py) python script in the Cloud9 terminal
 
-TO DO INSTRUCTIONS
+* Update the ```os_url``` variable with the URL of the OpenSearch domain endpoint 
+* Update the ```iam_arn``` variable with the IAM of the role created by the CloudFormation stack
 
-3. Open the Cloud9 environment and install Fluentd. Complete all of the subsequent steps in the Cloud9 terminal
+Note the CloudFormation stack output section can provide you with the domain endpoint URL and IAM role arn value
+
+Once you have updated the values save the file and ```python map_IAM_user.py``` in the Cloud9 terminal 
+
+3. Install Fluentd. Complete all of the subsequent steps in the Cloud9 terminal
 
 ```gem install fluentd --no-doc```
 
