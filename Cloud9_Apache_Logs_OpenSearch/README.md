@@ -1,4 +1,4 @@
-# Send Apache access logs from an Ubuntu Cloud9 to OpenSearch
+# Send Apache access logs from Fluentd running on an Ubuntu Cloud9 to OpenSearch
 
 Follow the instructions below
 
