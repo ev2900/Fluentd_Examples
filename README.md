@@ -1,6 +1,6 @@
 # Fluentd Examples
 
-<img width="275" alt="map-user" src="https://img.shields.io/badge/cloudformation template deployments-0-blue"> <img width="85" alt="map-user" src="https://img.shields.io/badge/views-029-green"> <img width="125" alt="map-user" src="https://img.shields.io/badge/unique visits-010-green">
+<img width="275" alt="map-user" src="https://img.shields.io/badge/cloudformation template deployments-3-blue"> <img width="85" alt="map-user" src="https://img.shields.io/badge/views-029-green"> <img width="125" alt="map-user" src="https://img.shields.io/badge/unique visits-010-green">
 
 Repository of Fluentd log collection, parsing examples. Click on the link below for detailed set up + execution instructions
 
